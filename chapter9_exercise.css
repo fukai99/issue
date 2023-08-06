@@ -23,6 +23,10 @@ main{
   position: relative;
   }
 
+.boxes:last-child{
+  margin-right: 0;
+}
+
   .step-num{
     position: absolute;
     top: 0;
@@ -63,19 +67,26 @@ footer{
 @media screen and (max-width: 768px) {
   header {
     width: 100%;
+    margin-bottom: 50px;
   }
   main{
     width: 100%;
-     display: block;
+    display: block;
   }
   
   .boxes{
-    
-    margin: 0 auto;
+    margin: 0 auto 20px;
+    background-size: 90% 150px;
+    width: 90%
+  
     
   }
   
+  .boxes:last-child{
+     margin-right: auto}
+     
   footer{
-    width: 100%
+    width: 100%;
+    margin-top: 30px;
   }
 }
